@@ -51,7 +51,7 @@
         <div class="content-center">
           <div class="profile-image"><a href="#"><img src="images/profile.jpg" alt="Image"/></a></div>
           <div class="h2 title">Monica Laura Burns</div>
-          <p class="category text-white">UI Designer, Webmaster</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary" href="#portfolio" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Projects</a>
+          <p class="category text-white">Web Designer, Content Manager</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary" href="#portfolio" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Projects</a>
         </div>
       </div>
       <div class="section">
@@ -133,7 +133,7 @@
           <div class="col-md-6">
             <div class="progress-container progress-primary"><span class="progress-badge">Content Management</span>
               <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div><span class="progress-value">85%</span>
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div><span class="progress-value">85%</span>
               </div>
             </div>
           </div>
@@ -178,6 +178,24 @@
             </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Wordpress</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Figma</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div><span class="progress-value">75%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -188,20 +206,21 @@
       <div class="col-md-6 ml-auto mr-auto">
         <div class="h4 text-center mb-4 title">Recent Projects</div>
         <div class="nav-align-center">
-          <ul class="nav nav-pills nav-pills-primary" role="tablist">
-            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#html" role="tablist"><i class="fab fa-html5" id="htm"></i></a></li>
-            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#react" role="tablist"><i class="fab fa-react" id="react"></i></a></li>
+          <ul class="nav nav-pills nav-pills-primary" role="tablist" id="tags">
+            <li class="nav-item filterBut act"><a class="nav-link active" data-tag="all">All</a></li>
+            <li class="nav-item filterBut"><a class="nav-link"  data-tag="design" >UI Design</a></li>
+            <li class="nav-item filterBut"><a class="nav-link" data-tag="react">React</a></li>
             
           </ul>
         </div>
       </div>
     </div>
-    <div class="tab-content gallery mt-5">
-      <div class="tab-pane active" id="html">
+    <div class="tab-content gallery mt-5" id="gallery" data-aos="fade-up">
+      <div class="tab-pane active" id="all">
         <div class="ml-auto mr-auto">
           <div class="row"> 
             <div class="col-md-6">
-              <div class="porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#html ">
+              <div class="porfolio-image design filter img-raised " data-tag="design">
                   <figure class="effect"><img src="images/project-1.jpg" alt="Image"/>
                     <figcaption>
                       <div class="h4"> Bootstrap 4 Eco Landing Page</div>
@@ -209,134 +228,63 @@
                       <a href="http://www.codester.com/index.php?url=items/preview/26381/4green-eco-friendly-bootstrap-4-landing-page" target="_blank"><i class="far fa-eye"></i></a>
                     </figcaption>
                   </figure></a></div>
-              <div class="porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#react">
-                  <figure class="effect"><img src="images/project-2.jpg" alt="Image"/>
+              <div class="porfolio-image react img-raised filter" data-tag="react">
+                  <figure class="effect"><img src="images/project-5.jpg" alt="Image"/>
                     <figcaption>
-                      <div class="h4">React Real Estate Landing Page</div>
-                      <p>Homepage design, work in progress</p>
-                      <a href="https://homereve-basic-landing.netlify.app/contact" target="_blank"><i class="far fa-eye"></i></a>
+                      <div class="h4">Responsive React One Page Template</div>
+                      <p>Built with ReactJs and styled components</p>
+                      <a href="https://alphcons.netlify.app" target="_blank"><i class="far fa-eye"></i></a>
                     
                     </figcaption>
                   </figure></a></div>
             </div>
             <div class="col-md-6">
-              <div class="porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#html">
-                  <figure class="effect"><img src="images/project-3.jpg" alt="Image"/>
+              <div class="porfolio-image design img-raised filter" data-tag="design">
+                  <figure class="effect"><img src="images/project-6.jpg" alt="Image"/>
                     <figcaption>
-                      <div class="h4">Chat app CSS illustration</div>
-                      <p>Developed for Frontend Mentor</p>
-                      <a href="https://monicalaura.github.io/chat_app_css/" target="_blank"><i class="far fa-eye"></i></a>
+                      <div class="h4">Room Products Landing Page</div>
+                      <p>Layout developed for Frontend Mentor</p>
+                      <a href="https://room-products-homepage.netlify.app" target="_blank"><i class="far fa-eye"></i></a>
                     </figcaption>
                   </figure></a></div>
-              <div class="porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+              <div class="porfolio-image react img-raised filter" data-tag="react">
                   <figure class="effect"><img src="images/project-4.jpg" alt="Image"/>
                     <figcaption>
                       <div class="h4">React Travel Agency Landing Page</div>
                       <p>Web Design Project, work in progress</p>
+                      <a href="https://all4trips.netlify.app/" target="_blank"><i class="far fa-eye"></i></a>
                     </figcaption>
                   </figure></a></div>
             </div>
 
             <div class="col-md-6">
-              <div class="porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#html ">
-                  <figure class="effect"><img src="images/project-5.jpg" alt="Image"/>
+              <div class="porfolio-image react img-raised filter"  data-tag="react">
+                  <figure class="effect"><img src="images/project-2.jpg" alt="Image"/>
                     <figcaption>
-                      <div class="h4"> Responsive React One Page Template</div>
-                      <p>Built with ReactJs and styled components</p>
-                      <a href="https://alphcons.netlify.app/" target="_blank"><i class="far fa-eye"></i></a>
+                      <div class="h4">React Real Estate Landing Page</div>
+                      <p>Homepage design, work in progress</p>
+                      <a href="https://homereve-basic-landing.netlify.app" target="_blank"><i class="far fa-eye"></i></a>
                     </figcaption>
                   </figure></a></div>
             </div>
                   <div class="col-md-6">
-              <div class="porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#react">
-                  <figure class="effect"><img src="images/project-6.jpg" alt="Image"/>
+              <div class="porfolio-image design img-raised filter"  data-tag="design">
+                  <figure class="effect"><img src="images/project-3.jpg" alt="Image"/>
                     <figcaption>
-                      <div class="h4">Mobile-first Pricing Component</div>
+                      <div class="h4">Chat app CSS illustration</div>
                       <p>Developed for Frontend Mentor</p>
-                      <a href="https://monicalaura.github.io/pricing-component-with-toggle/" target="_blank"><i class="far fa-eye"></i></a>
+                      <a href="https://monicalaura.github.io/chat_app_css" target="_blank"><i class="far fa-eye"></i></a>
                     
                     </figcaption>
                   </figure></a></div>
             </div>
           </div>
         </div>
+
+
         <!-- end row -->
       </div>
-      <div class="tab-pane" id="graphic-design" role="tabpanel">
-        <div class="ml-auto mr-auto">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
-                  <figure class="effect"><img src="images/graphic-design-1.jpg" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Triangle Pattern</div>
-                      <p>Graphic Design</p>
-                    </figcaption>
-                  </figure></a></div>
-              <div class="porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
-                  <figure class="effect"><img src="images/graphic-design-2.jpg" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Abstract Umbrella</div>
-                      <p>Graphic Design</p>
-                    </figcaption>
-                  </figure></a></div>
-            </div>
-            <div class="col-md-6">
-              <div class="porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
-                  <figure class="effect"><img src="images/graphic-design-3.jpg" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Cube Surface Texture</div>
-                      <p>Graphic Design</p>
-                    </figcaption>
-                  </figure></a></div>
-              <div class="porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
-                  <figure class="effect"><img src="images/graphic-design-4.jpg" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Abstract Line</div>
-                      <p>Graphic Design</p>
-                    </figcaption>
-                  </figure></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="tab-pane" id="Photography" role="tabpanel">
-        <div class="ml-auto mr-auto">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">
-                  <figure class="effect"><img src="images/photography-1.jpg" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Photoshoot</div>
-                      <p>Photography</p>
-                    </figcaption>
-                  </figure></a></div>
-              <div class="porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">
-                  <figure class="effect"><img src="images/photography-3.jpg" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Wedding Photoshoot</div>
-                      <p>Photography</p>
-                    </figcaption>
-                  </figure></a></div>
-            </div>
-            <div class="col-md-6">
-              <div class="porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">
-                  <figure class="effect"><img src="images/photography-2.jpg" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Beach Photoshoot</div>
-                      <p>Photography</p>
-                    </figcaption>
-                  </figure></a></div>
-              <div class="porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">
-                  <figure class="effect"><img src="images/photography-4.jpg" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Nature Photoshoot</div>
-                      <p>Photography</p>
-                    </figcaption>
-                  </figure></a></div>
-            </div>
-          </div>
-        </div>
+      
       </div>
     </div>
   </div>
@@ -609,5 +557,6 @@
     <script src="js/now-ui-kit.js?ver=1.1.0"></script>
     <script src="js/aos.js?ver=1.1.0"></script>
     <script src="scripts/main.js?ver=1.1.0"></script>
+
   </body>
 </html>

@@ -38,3 +38,28 @@ $('a.smooth-scroll')
     }
   }
 });
+
+//active class
+$(document).ready(function(){
+  $('.act').addClass("active");
+  $('ul li a').click(function(){
+    $('li a').removeClass("active");
+    $(this).addClass("active");
+ });
+});
+
+//filter
+$(document).ready(function() {
+$('#tags li a'). click(function() {
+  var tag = $(this).attr('data-tag');
+
+   if(tag === 'all') {
+ $('#gallery .porfolio-image').fadeIn();
+  } else {
+ $('#gallery .porfolio-image[data-tag!='+tag+']').hide('200');
+ $('#gallery .porfolio-image[data-tag='+tag+']').fadeIn();
+  }
+  return false;
+ });
+});
+
