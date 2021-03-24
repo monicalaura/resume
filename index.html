@@ -544,6 +544,26 @@
     <script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
     <script src="js/now-ui-kit.js?ver=1.1.0"></script>
     <script src="js/aos.js?ver=1.1.0"></script>
+    <script type="text/javascript">
+      function isElementInViewport (el) {
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+      el = el[0];
+  }
+  var position = el.getBoundingClientRect();
+  if(position.top >= 0 && position.bottom <= window.innerHeight) {
+    return true;
+  }
+  if(position.top < window.innerHeight && position.bottom >= 0) {
+    return true;
+  }
+  return false;
+}
+$("[data-aos]").each(function() {
+  if (isElementInViewport($(this))) {
+    $(this).removeAttr("data-aos");
+  }
+});
+    </script>  
      <noscript>
       <style type="text/css">
         [data-aos] {
