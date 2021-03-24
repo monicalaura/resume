@@ -5342,7 +5342,7 @@ a.credit {
 
 @media screen and (max-width: 480px) {
   [data-aos-delay] {
-    transition-delay: 0 !important;
+    transition-delay: 0s !important;
   }
 }
   
